@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import { montserrat } from './ui/fonts';
 import './ui/global.css'
+import { Provider } from './utils/provider';
 
 // more info about metadata: https://nextjs.org/docs/app/api-reference/functions/generate-metadata
 export const metadata: Metadata = {
@@ -19,7 +20,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} antialiased`}>{children}
+      <body className={`${montserrat.className} antialiased`}>
+        <Provider>{children}</Provider>
         <footer
           className="flex justify-center items-center h-16 bg-gray-800 text-white">
           <p className="text-sm">
