@@ -1,7 +1,7 @@
 "use client"
 import { useQuery } from "@tanstack/react-query"
 import Image from "next/image"
-import { Fragment, useEffect, useState } from "react"
+import { Fragment } from "react"
 
 export interface User {
   id: number

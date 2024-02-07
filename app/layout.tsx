@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import { montserrat } from './ui/fonts';
 import './ui/global.css'
-import { Provider } from './utils/provider';
+import { Provider } from '../providers/react-query';
 
 // more info about metadata: https://nextjs.org/docs/app/api-reference/functions/generate-metadata
 export const metadata: Metadata = {
